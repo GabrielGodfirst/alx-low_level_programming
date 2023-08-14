@@ -2,9 +2,9 @@
 
 
 /**
- * main-print Programming is like building a multilingual puzzle,using the function
- * puts instead of printf, followed by a  newline and
- *Return always 0
+ * main-print "Programming is like building a multilingual puzzl,
+ * follow by a nem newline
+ *Return:Always 0
  */
 
 int main(void)
