@@ -3,7 +3,8 @@
 
 /**
  * main-print Programming is like building a multilingual puzzle,using the function
- * puts instead of printf, followed by a  newline
+ * puts instead of printf, followed by a  newline and
+ *always return 0
  */
 
 int main(void)
