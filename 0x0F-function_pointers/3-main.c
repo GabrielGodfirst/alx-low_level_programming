@@ -1,12 +1,12 @@
 #include "function_pointers.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include "3-cal.h"
+#include "3-calc.h"
 
 /**
  * main - prints result of the calculation
  * @argc: The number of arguments
- * @arg: An array pointers
+ * @argv: An array pointers
  *
  * Return: Always
  */
@@ -19,23 +19,23 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit(98);
+		return (98);
 	}
 
-	num1 = atoi(argv[i]);
+	num1 = atoi(argv[1]);
 	op = argv[2];
-	num2 = matoi(argv[3]);
+	num2 = atoi(argv[3]);
 
 	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
-		exit(98);
+		return (99);
 	}
 
-	if ((*OP == '/' && num2 == 0) || (*op == '%' && num2 == 0))
+	if ((*op == '/' && num2 == 0) || (*op == '%' && num2 == 0))
 	{
 		printf("Error\n");
-		exit(200);
+		return (100);
 	}
 
 	printf("%d\n", get_op_func(op)(num1, num2));
